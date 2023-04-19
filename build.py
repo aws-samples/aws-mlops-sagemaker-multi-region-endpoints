@@ -65,7 +65,7 @@ def extend_config(args, model_package_arn, stage_config):
     """
     # Verify that config has parameters and tags sections
     if not "Parameters" in stage_config or not "StageName" in stage_config["Parameters"]:
-        raise Exception("Configuration file must include SageName parameter")
+        raise Exception("Configuration file must include StageName parameter")
     if not "Tags" in stage_config:
         stage_config["Tags"] = {}
     
